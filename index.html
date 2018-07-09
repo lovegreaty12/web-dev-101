@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link type="text/css" rel="stylesheet" href="style.css"/>
+
+<link href="https://fonts.googleapis.com/css?family=Pacifico|Rubik" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<style>
+
+div#home > div.section-padding > div.background-white > h1, h1 {font-family: 'Pacifico', cursive;}
+
+p, a, label, input, textarea {font-family: 'Rubik', sans-serif;}
+
+
+</style>
+</head>
+<body>
+
+
+<nav class="header">
+  <a href="index.html" class="logo">
+  	<div id="logo"><!--<span>Logo</span>-->
+  		<img src="images/logo.png" width="70" height="70">
+  	</div>
+  </a>
+
+  <input class="menu-btn" type="checkbox" id="menu-btn" />
+  <label class="menu-icon" for="menu-btn"><i class="fas fa-bars"></i></label>
+  <ul class="menu">
+    <li><a href="#home">Home</a></li>
+	<li><a href="#page1">About</a></li>
+	<li><a href="#page2">Gallery</a></li>
+	<li><a href="#page3">Contact</a></li>
+  </ul>
+</nav>
+
+
+	<div id="offset"></div>
+
+
+
+
+	<div class="section-container">
+
+		<div id="home">
+			<div class="section-padding">
+				<div class="background-white">
+					<h1>Hello World!</h1>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="page1" data-aos="fade-right">
+			<div class="section-padding">
+				<h1>About</h1>
+				<div class="background-none">
+					<p>Muffin ice cream I love dragée pudding pastry chocolate bar halvah. Cotton candy cotton candy carrot cake macaroon jujubes sugar plum soufflé dragée. I love topping candy sweet topping I love I love. Bonbon muffin tart bonbon jujubes marshmallow brownie. Toffee candy canes brownie lollipop icing icing. Chocolate bar sesame snaps toffee. Sesame snaps sugar plum marzipan caramels tiramisu dragée powder carrot cake jelly. Toffee gingerbread I love I love lollipop jelly-o chocolate bar dragée marzipan. Marzipan candy canes jelly brownie tiramisu jelly beans sweet roll I love jujubes. Sweet roll tiramisu powder powder jelly-o cookie lemon drops pie.
+					<br/><br/>
+					Oat cake gummi bears powder cake muffin I love. Tiramisu cake icing marshmallow pie cake gummi bears. I love sugar plum cake. I love dessert caramels dessert jujubes. Dessert gummi bears I love sweet roll. Chupa chups wafer jelly-o muffin I love. Tart tootsie roll cookie soufflé cheesecake chocolate liquorice liquorice cake. Bear claw carrot cake gummi bears topping danish fruitcake macaroon. Sweet roll gummi bears tootsie roll.
+					<br/><br/>
+					Pie topping chocolate croissant I love. Croissant biscuit liquorice. Cheesecake tootsie roll pie. Marzipan I love apple pie tootsie roll I love jujubes topping fruitcake. Chocolate cake pudding macaroon fruitcake oat cake liquorice muffin. Tart cake croissant halvah marshmallow I love sweet tootsie roll icing. Marzipan I love biscuit ice cream. Lemon drops I love tart bear claw candy canes. I love toffee 	chocolate candy canes.
+					<br/><br/>
+					Wafer icing powder carrot cake sweet roll. I love pie tiramisu dragée tart icing pudding cookie. Cake sesame snaps pudding brownie jelly beans croissant oat cake tart. I love cheesecake cupcake I love soufflé dragée sweet. Muffin wafer cake cake chupa chups jujubes. Chupa chups jujubes gummi bears lemon drops marshmallow carrot cake macaroon. Tootsie roll caramels jelly jelly beans sugar plum cheesecake macaroon. Ice cream muffin cupcake dessert cotton candy. Marzipan chupa chups chupa chups gummies caramels macaroon chocolate bar I love wafer.</p>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="page2">
+			<div class="section-padding">
+				<h1>Gallery</h1>
+			</div>
+		</div>
+
+
+		<div id="page3" data-aos="fade-right">
+			<div class="section-padding">
+				<h1>Get in Touch!</h1>
+
+					<div class="form">
+						<div class="form-group">
+		                    <label for="form_name">Name*</label>
+		                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Name" >
+		                    
+		                </div>
+		            
+		 			
+		                <div class="form-group">
+		                    <label for="form_email">Email*</label>
+		                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Email" >
+		                    
+		                </div>
+		            
+		        
+		        
+
+		                <div class="form-group">
+		                    <label for="form_message">Message*</label>
+		                    <textarea id="form_message" name="message" class="form-control" placeholder="Message" ></textarea>
+		                    
+		                </div>
+		           
+		                <input type="submit" class="btn btn-success btn-send" value="Send message">
+		           
+		            </div>
+
+
+
+
+
+
+
+
+
+
+			</div>
+		</div>
+
+
+
+
+	</div>
+
+<script src="jquery-1.7.1.min.js"></script>
+<script src="jquery.nav.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+
+	$(document).ready(function() {
+
+		$(window).scrollTop(0);
+		window.onbeforeunload = function(){ window.scrollTo(0,0); }
+
+		$(".menu").onePageNav();
+
+		AOS.init({
+  			duration: 1200,
+		})
+
+	});
+
+</script>
+</body>
+</html>
